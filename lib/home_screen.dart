@@ -10,32 +10,30 @@ class HomeScreen extends StatelessWidget {
           title: const Text('Componentes de Flutter'),
         ),
         body: ListView(
-          children: const [
+          children:  [
               ListTile(
-              leading: Icon(Icons.wordpress_outlined),
+              leading: const Icon(Icons.wordpress_outlined),
               title: Text('GSW campeones NBA',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: Text('2020-07-21 - Chase Center'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+              subtitle: const Text('2020-07-21 - Chase Center'),
+              trailing: const Icon(Icons.add_home_work_outlined),
             ),
-            Divider(),
-              ListTile(
-              leading: Icon(Icons.account_balance_sharp),
+            const Divider(),
+              const ListTile(
+              leading: Icon(Icons.accessibility_outlined),
               title: Text('Curry el mejor jugador',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
               ),
               subtitle: Text('Campeon MVP'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+              trailing: Icon(Icons.assistant_outlined),
             ),
-            Divider(),
-              ListTile(
-              leading: Icon(Icons.wordpress_outlined),
+            const Divider(),
+              const ListTile(
+              leading: Icon(Icons.waving_hand),
               title: Text('Splash Brothers',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
               ),
               subtitle: Text('Klay & Curry'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+              trailing: Icon(Icons.wb_incandescent),
             ),
           ]
         ),
