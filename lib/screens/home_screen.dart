@@ -7,9 +7,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Componentes de flutter',
-          style: TextStyle(color: Color.fromARGB(255, 215, 232, 247),
-            fontWeight: FontWeight.bold),),
+            title: const Text('Componentes de flutter',
+            style: TextStyle(color: Color.fromARGB(255, 1, 16, 29),
+            fontWeight: FontWeight.bold
+            ),  
+          ),
         ),
         body: ListView(
           children: [
