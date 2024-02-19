@@ -7,38 +7,40 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Componentes de Flutter'),
+          title: const Text('Componentes de flutter',
+          style: TextStyle(color: Color.fromARGB(255, 215, 232, 247),
+            fontWeight: FontWeight.bold),),
         ),
         body: ListView(
-          children:  [
-              ListTile(
-              leading: Icon(Icons.wordpress_outlined),
-              title: Text('GSW campeones NBA',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('2020-07-21 - Chase Center'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+          children: [
+            ListTile(
+              leading: const Icon(Icons.input_rounded),
+            title: Text('Entradas',
+            style: Theme.of(context).textTheme.headlineLarge,
             ),
-            Divider(),
-              ListTile(
-              leading: Icon(Icons.account_balance_sharp),
-              title: Text('Curry el mejor jugador',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('Campeon MVP'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+            subtitle: const Text('Diferentes widgets para entradas flutter'),
+            trailing: const Icon(Icons.arrow_circle_right),
             ),
-            Divider(),
-              ListTile(
-              leading: Icon(Icons.wordpress_outlined),
-              title: Text('Splash Brothers',
-              style: TextStyle(color: Color.fromARGB(255, 7, 57, 255), fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text('Klay & Curry'),
-              trailing: Icon(Icons.add_location_alt_outlined),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.list_alt_rounded),
+            title: Text('ListView.builder',
+            style: Theme.of(context).textTheme.headlineLarge,
             ),
-          ]
-        ),
-      );
+            subtitle: const Text('Scroll infinito'),
+            trailing: const Icon(Icons.arrow_circle_right),
+            ),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.notification_add),
+            title: Text('Notificaciones',
+            style: Theme.of(context).textTheme.headlineLarge,
+            ),
+            subtitle: const Text('Creación de notificaciones'),
+            trailing: const Icon(Icons.arrow_circle_right),
+          ),
+        ],
+      ),
+    );
   }
 }
