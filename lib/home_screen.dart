@@ -12,30 +12,35 @@ class HomeScreen extends StatelessWidget {
         body: ListView(
           children:  [
               ListTile(
-              leading: const Icon(Icons.wordpress_outlined),
-              title: Text('GSW campeones NBA',
+              leading: const Icon(Icons.input_rounded),
+              title: Text(
+                'Entradas',
               style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: const Text('2020-07-21 - Chase Center'),
-              trailing: const Icon(Icons.add_home_work_outlined),
+              subtitle: const Text(
+                'Diferentes widgets para entradas de flutter'
+              ),
+              trailing: const Icon(Icons.arrow_circle_right),
             ),
             
               ListTile(
-                leading: const Icon(Icons.accessibility_outlined),
-              title: Text('Curry el mejor jugador',
+                leading: const Icon(Icons.list_alt_rounded),
+              title: Text(
+                'Listview.builder',
               style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: const Text('Campeon MVP'),
-              trailing: const Icon(Icons.assistant_outlined),
+              subtitle: const Text('Scroll infinito'),
+              trailing: const Icon(Icons.arrow_circle_right),
               ),
               
               ListTile(
-              leading: const Icon(Icons.waving_hand),
-              title: Text('Splash Brothers',
+              leading: const Icon(Icons.notification_add),
+              title: Text(
+                'Notificaciones',
               style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: const Text('Klay & Curry'),
-              trailing: const Icon(Icons.wb_incandescent),
+              subtitle: const Text('Creacion de notificaciones'),
+              trailing: const Icon(Icons.arrow_circle_right),
             ),
           ]
         ),
