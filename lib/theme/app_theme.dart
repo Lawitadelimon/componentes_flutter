@@ -11,13 +11,14 @@ class AppTheme{
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
     appBarTheme: const AppBarTheme(color: mainColor),
+
     textTheme:  TextTheme(
       headlineLarge: GoogleFonts.comicNeue(
         color: mainColor,
         fontSize: 25.0,
         fontWeight: FontWeight.bold,
         decoration: TextDecoration.underline,
-        decorationColor: const Color.fromARGB(255, 75, 118, 236),
+        decorationColor: Color.fromARGB(255, 3, 42, 147),
         decorationStyle: TextDecorationStyle.double,
         decorationThickness: 1.0,
         fontStyle: FontStyle.normal
@@ -29,8 +30,7 @@ class AppTheme{
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.italic
 
-      )
-      
+      ),
     ),
-  ); 
+  );
 }
