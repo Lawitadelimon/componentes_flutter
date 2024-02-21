@@ -18,7 +18,7 @@ class AppTheme{
         fontSize: 25.0,
         fontWeight: FontWeight.bold,
         decoration: TextDecoration.underline,
-        decorationColor: Color.fromARGB(255, 3, 42, 147),
+        decorationColor: Color.fromARGB(225, 59, 85, 188),
         decorationStyle: TextDecorationStyle.double,
         decorationThickness: 1.0,
         fontStyle: FontStyle.normal
