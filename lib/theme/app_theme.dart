@@ -10,13 +10,36 @@ class AppTheme{
   //Declaraciones del tema claro
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
-    appBarTheme: const AppBarTheme(color: mainColor),
-
+    appBarTheme:  AppBarTheme(
+      color: mainColor,
+      titleTextStyle: GoogleFonts.alice(
+        color: backColor,
+        fontSize: 30.0,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    iconTheme: const IconThemeData(
+      color: accentColor,
+      size: 35.0,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(
+          mainColor
+          ),
+          foregroundColor: MaterialStateProperty.all(
+            backColor
+          ),
+          textStyle: MaterialStateProperty.all(
+            GoogleFonts.comicNeue(fontSize: 18.0),
+        ),
+      )
+    ),
     textTheme:  TextTheme(
       headlineLarge: GoogleFonts.comicNeue(
         color: mainColor,
         fontSize: 25.0,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
         decoration: TextDecoration.underline,
         decorationColor: const Color.fromARGB(225, 59, 85, 188),
         decorationStyle: TextDecorationStyle.double,
@@ -26,9 +49,9 @@ class AppTheme{
 
       bodySmall: GoogleFonts.montserrat(
         color: accentColor,
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: FontWeight.w400,
-        fontStyle: FontStyle.italic
+        fontStyle: FontStyle.normal
 
       ),
 
