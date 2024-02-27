@@ -47,9 +47,17 @@ class AppTheme{
         fontStyle: FontStyle.normal
       ),
 
-      bodySmall: GoogleFonts.montserrat(
+      headlineMedium: GoogleFonts.montserrat(
+        color: mainColor,
+        fontSize: 18.0,
+        fontWeight: FontWeight.w500,
+        decorationStyle: TextDecorationStyle.solid,
+        decorationThickness: 1.5,
+      ),
+
+      bodySmall: GoogleFonts.abel(
         color: accentColor,
-        fontSize: 15,
+        fontSize: 20,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal
 
