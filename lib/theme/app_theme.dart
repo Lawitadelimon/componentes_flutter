@@ -55,7 +55,7 @@ class AppTheme{
         decorationThickness: 1.5,
       ),
 
-      bodySmall: GoogleFonts.abel(
+      bodyMedium: GoogleFonts.abel(
         color: accentColor,
         fontSize: 20,
         fontWeight: FontWeight.w400,
