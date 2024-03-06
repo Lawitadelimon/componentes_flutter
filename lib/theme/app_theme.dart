@@ -38,7 +38,7 @@ class AppTheme{
     textTheme:  TextTheme(
       headlineLarge: GoogleFonts.comicNeue(
         color: mainColor,
-        fontSize: 25.0,
+        fontSize: 20.0,
         fontWeight: FontWeight.w500,
         decoration: TextDecoration.underline,
         decorationColor: const Color.fromARGB(225, 59, 85, 188),

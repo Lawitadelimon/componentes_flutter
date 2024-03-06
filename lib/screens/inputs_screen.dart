@@ -150,7 +150,7 @@ class _InputsScreenState extends State<InputsScreen> {
       ListTile(
         title: Text(
           'Kotlin',
-          style: AppTheme.lightTheme.textTheme.headlineSmall,
+          style: AppTheme.lightTheme.textTheme.headlineMedium,
         ),
         leading: Transform.scale(
           scale: 1.1,
@@ -169,7 +169,7 @@ class _InputsScreenState extends State<InputsScreen> {
       ListTile(
         title: Text(
           'Flutter',
-          style: AppTheme.lightTheme.textTheme.headlineSmall,
+          style: AppTheme.lightTheme.textTheme.headlineMedium,
         ),
         leading: Transform.scale(
           scale: 1.1,
@@ -194,7 +194,7 @@ class _InputsScreenState extends State<InputsScreen> {
       children: [
       Text(
         'Navegador',
-        style: AppTheme.lightTheme.textTheme.headlineSmall,
+        style: AppTheme.lightTheme.textTheme.headlineMedium,
         ),
         Checkbox(
           value: isChecked1, 
@@ -207,7 +207,7 @@ class _InputsScreenState extends State<InputsScreen> {
         ),
         Text(
         'Emulador',
-        style: AppTheme.lightTheme.textTheme.headlineSmall,
+        style: AppTheme.lightTheme.textTheme.headlineMedium,
         ),
         Checkbox(
           value: isChecked2, 
@@ -220,7 +220,7 @@ class _InputsScreenState extends State<InputsScreen> {
         ),
         Text(
         'Smartphone',
-        style: AppTheme.lightTheme.textTheme.headlineSmall,
+        style: AppTheme.lightTheme.textTheme.headlineMedium,
         ),
         Checkbox(
           value: isChecked3, 
