@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practica3/theme/app_theme.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class ImagesScreen extends StatefulWidget {
   const ImagesScreen({super.key});
@@ -52,11 +53,27 @@ class _ImagesScreenState extends State<ImagesScreen> {
       ) 
     );
   }
-  Widget imageWeb(){
-    return Center(
-      child: Image.network(
-        'https://i.pinimg.com/originals/82/9a/82/829a82bd6f39f7456c6f4cc2dacc27f6.jpg'
-      ),
+  Stack imageWeb(){
+    return Stack(
+      children: <Widget>[
+        const Center( 
+            child: CircularProgressIndicator(),
+          ),
+        
+        Center(
+          child: SizedBox(
+          height: 450,
+          width: 450,
+          child: FadeInImage.memoryNetwork(
+            placeholder: kTransparentImage, 
+            image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Stephen_Curry_dribbling_2016_%28cropped%29.jpg'
+            ),
+          // Image.network(
+          //   ), 
+          //Es para traes imagen de la web
+          ),
+        ), 
+      ],
     );
   }
 }
