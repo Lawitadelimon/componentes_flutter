@@ -49,7 +49,7 @@ class AppTheme{
 
       headlineMedium: GoogleFonts.montserrat(
         color: accentColor,
-        fontSize: 15.0,
+        fontSize: 12.0,
         fontWeight: FontWeight.w500,
         decorationStyle: TextDecorationStyle.solid,
         decorationThickness: 1.5,

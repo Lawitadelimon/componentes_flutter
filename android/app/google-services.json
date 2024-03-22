@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702437176041",
+    "project_id": "componentesflutter-792c1",
+    "storage_bucket": "componentesflutter-792c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702437176041:android:00e0e8b627c88dac943678",
+        "android_client_info": {
+          "package_name": "com.example.practica3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATD3ZfXfFQOa1DVgBPxiN0IjJuwJ_Lros"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
