@@ -4,6 +4,7 @@ import 'package:practica3/screens/home_screen.dart';
 import 'package:practica3/screens/images_screen.dart';
 import 'package:practica3/screens/inputs_screen.dart';
 import 'package:practica3/screens/notifications_screen.dart';
+import 'package:practica3/services/firebase%20_services.dart';
 import 'package:practica3/theme/app_theme.dart';
 
 
@@ -49,13 +50,36 @@ class _InfiniteListScreenState extends State<InfiniteListScreen> {
       appBar: AppBar(
         title: const Text('Lista Infinita')
         ),
-      body: const Padding(
-        padding: EdgeInsets.all(20.0),
-        child: Column(
+      body:FutureBuilder(
+        future: getMascotas(),
+        builder: ((context, snapshot) {
+          if (snapshot.hasData){
+            return ListView.builder(
+              itemCount: snapshot.data?.length,
+              itemBuilder: (context, index) {
+                return Center(
+                  child: Text(
+                    snapshot.data?[index]['nombre'],
+                    style: AppTheme.lightTheme.textTheme.headlineMedium,
+                  ),
+                );
+              },
+            );
+
+          
+        } else {
+          return const Center (
+            child: CircularProgressIndicator(),
+          );
+        }
+      })),
+      // const Padding(
+      //   padding: EdgeInsets.all(20.0),
+      //   child: Column(
           
           
-        ),
-      ),
+      //   ),
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         backgroundColor: AppTheme.mainColor,
@@ -99,4 +123,5 @@ class _InfiniteListScreenState extends State<InfiniteListScreen> {
       ),
     );
   }
+  
 }

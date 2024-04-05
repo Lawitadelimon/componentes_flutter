@@ -58,7 +58,8 @@ class HomeScreen extends StatelessWidget {
               title: Text('ListView.builder',
               style: Theme.of(context).textTheme.headlineLarge, 
               ),
-              subtitle:  Text('Scroll infinito',
+              subtitle:  Text(
+              'Datos desde Firebase',
               style: AppTheme.lightTheme.textTheme.bodySmall),
               trailing:  IconTheme(
               data: AppTheme.lightTheme.iconTheme,
